@@ -39,10 +39,11 @@ class Home extends StatelessWidget {
         trailing: Icon(Icons.keyboard_arrow_right, color: Colors.green),
         onTap: (){
 
-          final route = MaterialPageRoute(
+          Navigator.pushNamed(context, opc['ruta']);
+          /*final route = MaterialPageRoute(
             builder: (context) => AlertP()            
           );
-          Navigator.push(context, route);
+          Navigator.push(context, route);*/
         },
       );
 
