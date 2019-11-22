@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:componentes/src/providers/menu.dart';
 import 'package:componentes/src/utils/icono_string.dart';
-import 'package:componentes/src/pages/alert.dart';
+//import 'package:componentes/src/pages/alert.dart';
 
 class Home extends StatelessWidget {
   
