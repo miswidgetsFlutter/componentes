@@ -32,6 +32,10 @@ class Home extends StatelessWidget {
     
     final List<Widget> opciones = [];
 
+    if (data == null) {
+      return [];
+    }
+
     data.forEach( (opc) {
       final widgetTemp = ListTile(
         title: Text(opc['texto']),

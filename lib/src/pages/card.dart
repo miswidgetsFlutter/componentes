@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class CardPage extends StatelessWidget {
 
-  var _jeje = "soy marco me gusta programar y picarle al codigo asi de chido";
+  final _jeje = "soy marco me gusta programar y picarle al codigo asi de chido";
   
   final est = TextStyle(fontSize: 30);
 
@@ -17,7 +17,8 @@ class CardPage extends StatelessWidget {
         padding: EdgeInsets.all(10.0),
         children: <Widget>[
           _cardTipo2(),
-          _cardTipo2(),
+          SizedBox(height: 30.0),
+          _cardTipo3(),
         ],
       )
     );
@@ -68,6 +69,33 @@ class CardPage extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  Widget _cardTipo3(){
+
+    return Card(
+      child: Column(
+        children: <Widget>[
+
+          FadeInImage(
+            image: NetworkImage('https://cdn.mos.cms.futurecdn.net/FUE7XiFApEqWZQ85wYcAfM.jpg'),
+            placeholder: AssetImage('assets/jar-loading.gif'),
+            fadeInDuration: Duration(milliseconds: 200),
+            height: 250,
+            fit: BoxFit.cover,
+          ),
+
+          /*Image(
+            image: NetworkImage('https://cdn.mos.cms.futurecdn.net/FUE7XiFApEqWZQ85wYcAfM.jpg'),
+          ),*/
+          Container(
+            padding: EdgeInsets.all(10.0),
+            child: Text('no se que poner'),
+          )
+        ],
+      ),
+    );
+
   }
 
 }
