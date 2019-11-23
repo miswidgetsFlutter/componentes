@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:componentes/src/pages/home.dart';
+
 class AvatarP extends StatelessWidget {
   
   @override
@@ -10,12 +12,18 @@ class AvatarP extends StatelessWidget {
         title: Text('Avatar Page'),
       ),
       body: Center(
-        child: Text('ora putoo', style: TextStyle(fontSize: 30)),
+        child: Text('ora putoo', style: TextStyle(fontSize: 60)),
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.assignment_return),
         onPressed: (){
-          Navigator.pop(context); //regresa a la pag anterior
+
+          final route = MaterialPageRoute(
+            builder: (context) => Home(),
+          );
+
+          Navigator.push(context, route);
+          //Navigator.pop(context, route); //regresa a la pag anterior
         },
       ),
     );

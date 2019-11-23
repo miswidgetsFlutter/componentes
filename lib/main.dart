@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',  //declaramos la ruta inicial
       routes: getAplicationRoutes(),
       onGenerateRoute: (RouteSettings settings){
-        print('ruta llamada ${settings.name}');
+        print('la ruta por defecto es ${settings.name}');
 
         return MaterialPageRoute(
           builder: (BuildContext context) => AlertP()
