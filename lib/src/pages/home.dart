@@ -37,6 +37,7 @@ class Home extends StatelessWidget {
     }
 
     data.forEach( (opc) {
+      
       final widgetTemp = ListTile(
         title: Text(opc['texto']),
         leading: getIcon( opc['icon']),
