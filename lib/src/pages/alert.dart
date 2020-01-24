@@ -38,18 +38,21 @@ class AlertP extends StatelessWidget {
   }
 
   final _jiji = TextStyle(color: Colors.white);
+  
   void _mostrarAlert(BuildContext context){
     showDialog(
       context: context,
       barrierDismissible: true,
       builder: (context){
         return AlertDialog(
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
           title: Text('hola marco'),
           content: Column(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
               Text('este es el contenido de la caja de alerta'),
-              FlutterLogo(size: 100.0)
+              Text('todo chido'),
+              FlutterLogo(size: 70.0)
             ],
           ),
           actions: <Widget>[
@@ -64,8 +67,7 @@ class AlertP extends StatelessWidget {
               },
             ),
           ],
-          //content: Text('hallaaaaa', style: _jiji,),
-          //backgroundColor: Colors.black,
+          
         );
       }
     );
