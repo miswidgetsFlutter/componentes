@@ -8,6 +8,7 @@ class CardPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Colors.transparent,
         appBar: AppBar(
           title: Text('card'),
         ),
@@ -89,7 +90,6 @@ class CardPage extends StatelessWidget {
 
   Widget _cardTipo3() {
     final card = Container(
-      //clipBehavior: Clip.antiAlias,
       child: Column(
         children: <Widget>[
           FadeInImage(
@@ -115,7 +115,7 @@ class CardPage extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10.0),
-        color: Colors.red,
+        color: Colors.pinkAccent,
         boxShadow: <BoxShadow>[
           BoxShadow(
             color: Colors.black26,

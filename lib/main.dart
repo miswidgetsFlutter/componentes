@@ -13,12 +13,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Componentes App',
       debugShowCheckedModeBanner: false, //borra el liston debug
-      //home: Home(),
       initialRoute: '/',  //declaramos la ruta inicial
       routes: getAplicationRoutes(),
       onGenerateRoute: (RouteSettings settings){
+        //solo para imprimir en consola
         print('la ruta por defecto es ${settings.name}');
-
         return MaterialPageRoute(
           builder: (BuildContext context) => AlertP()
         );

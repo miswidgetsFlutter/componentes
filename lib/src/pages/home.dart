@@ -12,7 +12,7 @@ class Home extends StatelessWidget {
         title: Text('componetes'),
       ),
       body: _lista(),
-          );
+    );
   }//build
       
   Widget _lista() {
