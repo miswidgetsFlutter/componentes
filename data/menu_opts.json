@@ -20,6 +20,11 @@
             "ruta" : "grande",
             "icon" : "add",
             "texto": "marquito - bebe"
+        },
+        {
+            "ruta" : "animated",
+            "icon" : "donut_large",
+            "texto": "animated page"
         }
     ]
 }
