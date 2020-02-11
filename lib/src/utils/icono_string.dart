@@ -9,6 +9,7 @@ final _icons = <String, IconData>{
   'add': Icons.add,
   'donut_large': Icons.donut_large,
   'input': Icons.input,
+  'tune': Icons.tune,
 
 };
 
